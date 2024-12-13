@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV file
-df = pd.read_csv('50SOC_1C_heat_gen.csv')
+df = pd.read_csv('50SOC_2C_heat_gen.csv')
 
 # Assuming the unnamed column is the first column and represents time in HH:MM:SS format
 df.rename(columns={df.columns[0]: 'Time'}, inplace=True)
@@ -45,4 +45,4 @@ def calculate_and_print_averages(df, start_time, end_time):
     
 
 # Example usage of calculate_and_print_averages function
-calculate_and_print_averages(df, 13000,19000)
+calculate_and_print_averages(df, 9000,10000)

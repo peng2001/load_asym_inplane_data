@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 # Load the CSV file
-df = pd.read_csv('75SOC_asym_15to30.csv')
+df = pd.read_csv('75SOC_asym_15to40.csv')
 
 # Assuming the unnamed column is the first column and represents datetime
 df.rename(columns={df.columns[0]: 'Datetime'}, inplace=True)
@@ -74,4 +74,12 @@ calculate_and_print_averages(df, 123000, 124000)
 print("25 and 30 degrees")
 calculate_and_print_averages(df, 139000, 140000)
 print("30 degrees")
-calculate_and_print_averages(df, 167000, 168000)
+calculate_and_print_averages(df, 161000, 162000)
+print("30 and 35 degrees")
+calculate_and_print_averages(df, 198000, 199000)
+print("35 degrees")
+calculate_and_print_averages(df, 228000, 229000)
+print("35 to 40 degrees")
+calculate_and_print_averages(df, 254000, 255000)
+print("40 degrees")
+calculate_and_print_averages(df, 288000, 289000)
